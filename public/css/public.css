@@ -1,0 +1,160 @@
+/**
+ * Public CSS for Google Reviews Slideshow
+ */
+
+* {
+    min-height: 0;
+    min-width: 0;
+}
+
+.google-reviews-slideshow {
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.google-reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Side: Rating Summary */
+.google-reviews-summary {
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e9ecef;
+    box-sizing: border-box;
+}
+
+.google-reviews-place h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #202124;
+}
+
+.google-reviews-rating {
+    margin-bottom: 15px;
+}
+
+.google-reviews-stars {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.google-reviews-stars .dashicons {
+    color: #fbbc04;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.google-reviews-rating-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #202124;
+}
+
+.google-reviews-count {
+    margin-bottom: 20px;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.google-reviews-powered-by {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.google-reviews-powered-by img {
+    margin-left: 5px;
+    height: 20px;
+    width: auto;
+}
+
+.google-reviews-slideshow-container {
+    flex: 0 0 70%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.google-review-slide {
+    outline: none;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.google-review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.google-review-author {
+    display: flex;
+    align-items: center;
+}
+
+.google-review-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.google-review-author-name {
+    font-weight: 500;
+    color: #202124;
+}
+
+.google-review-rating {
+    display: flex;
+}
+
+.google-review-rating .dashicons {
+    color: #fbbc04;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.google-review-content {
+    margin-bottom: 10px;
+    color: #202124;
+    line-height: 1.5;
+}
+
+.google-review-time {
+    color: #5f6368;
+    font-size: 12px;
+    text-align: right;
+}
+
+.google-reviews-error {
+    padding: 20px;
+    text-align: center;
+    color: #d93025;
+}
+
+@media (max-width: 768px) {
+    .google-reviews-container {
+        flex-direction: column;
+    }
+    
+    .google-reviews-summary,
+    .google-reviews-slideshow-container {
+        flex: 0 0 100%;
+    }
+    
+    .google-reviews-summary {
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+    }
+}
